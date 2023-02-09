@@ -1,43 +1,27 @@
 <div class="wrapper">
   <div class="form">
     <h1>Añadir nueva noticia</h1>
-    <form>
-      <div class="lineForm">
-        <label for="titulo">Introduce el titulo</label>
-        <input type="text" id="titulo" name="titulo" class="input" />
-      </div>
-      <div class="lineForm">
-        <label for="fecha">Introduce la fecha</label>
-        <input type="date" id="fecha" name="fecha" class="input" />
-      </div>
-      <div class="lineForm">
-        <label for="imagen">Introduce la URL de la imagen</label>
-        <input type="text" id="imagen" name="imagen" class="input" />
-      </div>
-      <div class="lineForm">
-        <label for="texto">Introduce el texto</label>
-        <textarea id="texto" name="texto" class="input textarea"> </textarea>
-      </div>
-      <button class="button">Guardar noticia</button>
-    </form>
+    <div class="lineForm">
+      <label for="titulo">Introduce el titulo</label>
+      <input type="text" id="titulo" name="titulo" class="input" />
+    </div>
+    <div class="lineForm">
+      <label for="fecha">Introduce la fecha</label>
+      <input type="date" id="fecha" name="fecha" class="input" />
+    </div>
+    <div class="lineForm">
+      <label for="imagen">Introduce la URL de la imagen</label>
+      <input type="text" id="imagen" name="imagen" class="input" />
+    </div>
+    <div class="lineForm">
+      <label for="texto">Introduce el texto</label>
+      <textarea id="texto" name="texto" class="input textarea"> </textarea>
+    </div>
+    <button class="button">Guardar noticia</button>
   </div>
   <div class="noticias">
     <h1>Listado de Noticias</h1>
-    <article class="noticiaWrapper">
-      <div class="imagen"><img class="imageResonsive" src="https://via.placeholder.com/800" /></div>
-      <div class="noticiaContent">
-        <h2>Titulo de la noticia</h2>
-        <p class="date">15 de enero de 2023</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          convallis placerat ex sed interdum. Nullam eu nisl risus. Maecenas ut
-          massa interdum, sagittis tortor sit amet, varius purus. Nunc varius,
-          turpis ac mollis rhoncus, turpis nisi faucibus lectus, at mattis
-          ligula orci ut quam. Pellentesque ut neque ac ipsum viverra vulputate
-          et et justo. In vehicula lacus sem, in luctus orci volutpat et. Nullam
-          massa turpis, auctor in lectus quis, auctor accumsan massa.
-        </p>
-      </div>
-    </article>
+    <div class="listadoNoticias" [innerHtml]="cargarNoticias ()">
+    </div>
   </div>
 </div>

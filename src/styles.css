@@ -54,3 +54,41 @@ a:hover {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+/* css listado de noticias */
+.noticias {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-top: 2px solid #ddd;
+}
+
+.imageResonsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.date {
+    color: green;
+}
+
+.noticiaWrapper {
+    margin-top: 40px;
+    padding-bottom:30px;
+    border-bottom: 1px solid #aaa;
+}
+
+@media (min-width: 768px) {
+    .noticiaWrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    .imagen {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+    .noticiaContent {
+        flex-basis: 60%;
+        flex-grow: 1;
+    } 
+}
