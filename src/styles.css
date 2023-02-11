@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/* estilos generales para toda la aplicación */
 * {
     box-sizing: border-box;
 }
@@ -55,7 +56,7 @@ a:hover {
     padding-right: 2rem;
 }
 
-/* css listado de noticias */
+/* estilos listado de noticias, al pintarlo con innerHTML hay que ponerlas en esta hoja de estilo */
 .noticias {
     margin-top: 20px;
     margin-bottom: 50px;

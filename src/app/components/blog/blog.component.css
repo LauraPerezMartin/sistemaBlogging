@@ -1,34 +1,20 @@
+/* estilos formulario */
 .form {
-    margin: 10px auto 40px auto;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
 }
+
 @media (min-width: 768px) {
+    .form {
+        max-width: 75%;
+    }
+}
+@media (min-width: 1024px){
     .form {
         max-width: 50%;
     }
-}
-
-.noticias {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    border-top: 2px solid #ddd;
-}
-
-.imageResonsive {
-    max-width: 100%;
-}
-
-@media (min-width: 768px) {
-    .noticiaWrapper {
-        display: flex;
-        gap: 20px;
-    }
-
-    .image {
-        flex-basis: 40%;
-    }
-    .noticiaContent {
-        flex-basis: 60%;
-    } 
 }
 
 .lineForm {
@@ -56,8 +42,5 @@
     color: green;
     padding: 7px 10px;
     margin-top: 10px;
-}
-
-.date {
-    color: green;
+    cursor: pointer;
 }

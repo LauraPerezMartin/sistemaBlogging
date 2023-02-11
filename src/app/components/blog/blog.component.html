@@ -3,25 +3,25 @@
     <h1>Añadir nueva noticia</h1>
     <div class="lineForm">
       <label for="titulo">Introduce el titulo</label>
-      <input type="text" id="titulo" name="titulo" class="input" />
+      <input type="text" id="titulo" class="input" [(ngModel)]="titulo" />
     </div>
     <div class="lineForm">
       <label for="fecha">Introduce la fecha</label>
-      <input type="date" id="fecha" name="fecha" class="input" />
+      <input type="date" id="fecha" class="input" [(ngModel)]="fecha" />
     </div>
     <div class="lineForm">
       <label for="imagen">Introduce la URL de la imagen</label>
-      <input type="text" id="imagen" name="imagen" class="input" />
+      <input type="text" id="imagen" class="input" [(ngModel)]="imagenURL" />
     </div>
     <div class="lineForm">
       <label for="texto">Introduce el texto</label>
-      <textarea id="texto" name="texto" class="input textarea"> </textarea>
+      <textarea id="texto" class="input textarea" [(ngModel)]="texto"> </textarea>
     </div>
-    <button class="button">Guardar noticia</button>
+    <button class="button" (click)="guardarNoticia()">Guardar noticia</button>
   </div>
   <div class="noticias">
     <h1>Listado de Noticias</h1>
-    <div class="listadoNoticias" [innerHtml]="cargarNoticias ()">
+    <div class="listadoNoticias" [innerHtml]="listadoHTML">
     </div>
   </div>
 </div>
